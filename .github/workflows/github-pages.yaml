@@ -15,7 +15,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - run: ls
+      - run: tree
+      - run: git branch
+      - run: git checkout page
+      - run: git branch
       - name: Push build to *page* branch
         #run: git subtree push --prefix dist origin page
-        run: git checkout page && git brach && git checkout master dist
+        run: git checkout master dist
