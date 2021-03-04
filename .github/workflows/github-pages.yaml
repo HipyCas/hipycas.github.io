@@ -2,9 +2,11 @@ name: GitHub Pages Deployment
 
 on:
   push:
+    branches:
+      - master
   pull_request:
     branches:
-      - main
+      - master
     types: [closed]
 
 jobs:
