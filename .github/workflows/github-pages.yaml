@@ -31,5 +31,4 @@ jobs:
       - name: Commit built into docs
         run: |
           git add -f docs/
-          git commit -m "Build #${{ github.run_number }}"
-          git push origin master
+          (git commit -m "Build #${{ github.run_number }}" && git push origin master) || echo "No changes to the source were made, commit not created"
