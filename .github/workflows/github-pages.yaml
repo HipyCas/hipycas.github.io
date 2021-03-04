@@ -23,6 +23,6 @@ jobs:
           git config user.email "<>"
       - name: Commit built into docs
         run: |
-          git add docs/
+          git add -f docs/
           git commit -m "Build #${{ github.run_number }}"
           git push origin master
