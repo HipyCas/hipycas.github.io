@@ -1,6 +1,6 @@
 name: GitHub Pages Deployment
 
-on: [push, merge, pull_request]
+on: [push, pull_request]
 
 jobs:
   deploy:
