@@ -15,7 +15,14 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - run: tree -d 3
+      - run: tree -L 3
       - run: git branch
-      - name: Push build to *page* branch
-        run: git subtree push --prefix dist origin page
+      - name: Set git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Commit built into docs
+        run: |
+          git add docs/
+          git commit -m "Build #${{ github.run_number }}"
+          git push origin master
