@@ -1,0 +1,19 @@
+{
+  "name": "hipycas.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HipyCas/hipycas.github.io.git"
+  },
+  "author": "HipyCas <hipycas@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HipyCas/hipycas.github.io/issues"
+  },
+  "homepage": "https://github.com/HipyCas/hipycas.github.io#readme"
+}
