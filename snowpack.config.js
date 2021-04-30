@@ -12,7 +12,7 @@ module.exports = {
     [
       'snowpack-plugin-raw-file-loader',
       {
-        exts: ['.md', '.html'], // Add file extensions saying what files should be loaded as strings in your snowpack application. Default: '.txt'
+        exts: ['.md'], // Add file extensions saying what files should be loaded as strings in your snowpack application. Default: '.txt'
       },
     ],
   ], // ! '@snowpack/plugin-typescript'], NOT WORKING
