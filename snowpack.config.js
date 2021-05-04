@@ -8,7 +8,6 @@ module.exports = {
     /* ... */
   },
   plugins: [
-    '@snowpack/plugin-typescript',
     [
       'snowpack-plugin-raw-file-loader',
       {
